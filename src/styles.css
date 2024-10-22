@@ -1,4 +1,49 @@
-/* styles.css */
+:root {
+  --primary-color: #001f3f;
+  --font-color: #fef5f5;
+  --h1-size: 4rem;
+  --h2-size: 1.5rem;
+  --font-size: 1rem;
+  --tw-bg-opacity: 1;
+}
+
+html, body {
+  height: 100%; 
+  margin: 0;    
+  color: var(--font-color);
+}
+
 body {
-  background-color: rebeccapurple;
+  height: 100vh; 
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  background-repeat: no-repeat;
+  display: flex; 
+  flex-direction: column; 
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin: 5em;
+  font-size: var(--font-size);
+}
+
+.presentation {
+  line-height: 1em
+}
+.dev-description {
+  width: 300px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
 }
