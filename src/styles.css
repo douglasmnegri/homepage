@@ -5,6 +5,7 @@
   --h2-size: 1.5rem;
   --font-size: 1rem;
   --tw-bg-opacity: 1;
+  --img-bg-opacity: 0.5;
 }
 
 html, body {
@@ -41,6 +42,38 @@ header {
 }
 .dev-description {
   width: 300px;
+}
+
+.image-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white solid 4px;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.blue-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(15 23 42 / var(--img-bg-opacity));
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover .blue-overlay {
+  opacity: 0; /* Makes the overlay transparent on hover */
 }
 
 main {
