@@ -105,8 +105,7 @@ main {
   cursor: pointer;
 }
 
-
-.glassmorphism-project {
+.book-content {
   display: flex;
   justify-content: flex-start;
   background: rgba(255, 255, 255, 0.1);
@@ -117,6 +116,7 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 1000px;
   margin-bottom: 1em;
+  margin-top: 2.5em;
   visibility: hidden;
 }
 
@@ -139,6 +139,6 @@ main {
   justify-content: flex-start;
   gap: 1em;
   margin-top: 2em;
-  color: var(--green-font);
-  opacity: var(--tw-bg-opacity);
+  color: white;
+  opacity: var(--img-bg-opacity);
 }

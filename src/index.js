@@ -1,12 +1,12 @@
-import "./styles.css";
-const greeting = "Hello! This is my homepage!";
-console.log(greeting);
-
-function showProject(project) {
-  const projectTag = document.querySelector(project);
-  projectTag.addEventListener("click", () => {
-    console.log("Hello World!");
-  });
-}
-
-showProject("book");
+function showProject(event) {
+    const projectTag = event.target;
+    const projectClass = projectTag.classList[0];
+    const projectContent = document.querySelector(`.${projectClass}-content`);
+  
+    console.log(projectContent);
+    
+    if (projectContent) {
+      projectContent.style.visibility = projectContent.style.visibility === "hidden" ? "visible" : "hidden";
+    }
+  }
+  
