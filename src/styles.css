@@ -2,24 +2,26 @@
   --primary-color: #001f3f;
   --font-color: #fef5f5;
   --h1-size: 4rem;
-  --h2-size: 1.5rem;
+  --h2-size: 2.5rem;
   --font-size: 1rem;
   --tw-bg-opacity: 1;
   --img-bg-opacity: 0.5;
+  --green-font: #5eead4;
 }
 
-html, body {
-  height: 100%; 
-  margin: 0;    
+html,
+body {
+  height: 100%;
+  margin: 0;
   color: var(--font-color);
 }
 
 body {
-  height: 100vh; 
+  height: 100vh;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
   background-repeat: no-repeat;
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -33,20 +35,25 @@ h2 {
 header {
   display: flex;
   justify-content: space-around;
-  margin: 5em;
+  margin: 5em 5em 0.5em 5em;
   font-size: var(--font-size);
 }
 
 .presentation {
-  line-height: 1em
+  line-height: 1.25em;
 }
 .dev-description {
   width: 300px;
 }
 
+.user-description,
+.dev-description {
+  opacity: var(--img-bg-opacity);
+}
+
 .image-container {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
   overflow: hidden;
   display: flex;
@@ -79,4 +86,59 @@ header {
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#box-projects {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+}
+
+#box-projects div {
+  display: flex;
+  gap: 1.5em;
+}
+
+.projects-icon {
+  cursor: pointer;
+}
+
+
+.glassmorphism-project {
+  display: flex;
+  justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 1000px;
+  margin-bottom: 1em;
+  visibility: hidden;
+}
+
+.project1-img {
+  display: block;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  overflow: hidden;
+  margin: 1em 5em 1em 1em;
+  border: solid white;
+}
+
+.project-description {
+  width: 350px;
+}
+
+.language-icon {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+  margin-top: 2em;
+  color: var(--green-font);
+  opacity: var(--tw-bg-opacity);
 }
