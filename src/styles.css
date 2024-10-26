@@ -147,7 +147,8 @@ main {
 footer {
   margin-top: 5em;
   padding: 0em 2em 0em 2em;
-  background-color: rgb(127, 76, 76);
+  background-color: rgba(94, 234, 212, var(--img-bg-opacity));
+
 }
 .footer-info {
   display: flex;
@@ -172,10 +173,14 @@ footer {
   display: flex;
   justify-content: center;
   margin: 0em;
-  transform: translateY(-18px);
+  transform: translateY(-16px);
 }
 
 .socials p {
   gap: 1em;
   transform: translateY(5px);
 }
+.contact-info p {
+  gap: 1em;
+}
+
