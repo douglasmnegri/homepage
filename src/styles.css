@@ -2,13 +2,12 @@
   --primary-color: #001f3f;
   --font-color: #fef5f5;
   --h1-size: 4rem;
-  --h2-size: 2.5rem;
+  --h2-size: 1.5rem;
   --font-size: 1rem;
   --tw-bg-opacity: 1;
   --img-bg-opacity: 0.5;
   --green-font: #5eead4;
 }
-
 
 html,
 body {
@@ -145,21 +144,38 @@ main {
   width: 350px;
 }
 
-
 footer {
   margin-top: 5em;
   padding: 0em 2em 0em 2em;
   background-color: rgb(127, 76, 76);
 }
-
-.contact-me {
-  transform: translateY(-25px);
+.footer-info {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-
+  gap: 2em;
 }
-.contact-me h2 {
 
-  margin: 0em 
+.contact-me p,
+.address p,
+.contact-info p,
+.socials p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.contact-me h2,
+.address h2,
+.contact-info h2,
+.socials h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0em;
+  transform: translateY(-18px);
+}
+
+.socials p {
+  gap: 1em;
+  transform: translateY(5px);
 }
