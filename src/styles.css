@@ -105,18 +105,17 @@ main {
   cursor: pointer;
 }
 
-.book-content {
+.project1-content,
+.project2-content,
+.project3-content {
   display: flex;
-  justify-content: flex-start;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0.5px);
   -webkit-backdrop-filter: blur(0.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  width: 1000px;
-  margin-bottom: 1em;
-  margin-top: 2.5em;
+  margin: 2.5em 4em 1em 4em;
   visibility: hidden;
 }
 
@@ -124,14 +123,11 @@ main {
   display: block;
   background-position: center;
   background-size: cover;
-  height: 250px;
+  height: 200px;
   overflow: hidden;
   margin: 1em 5em 1em 1em;
-  border: solid white;
-}
-
-.project-description {
-  width: 350px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .language-icon {
@@ -141,4 +137,10 @@ main {
   margin-top: 2em;
   color: white;
   opacity: var(--img-bg-opacity);
+  position: inherit;
+  color: var(--green-font);
+}
+
+.project-description {
+  width: 350px;
 }

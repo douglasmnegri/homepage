@@ -3,6 +3,7 @@ function showProject(event) {
     const projectClass = projectTag.classList[0];
     const projectContent = document.querySelector(`.${projectClass}-content`);
   
+    console.log(projectClass)
     console.log(projectContent);
     
     if (projectContent) {
