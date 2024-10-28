@@ -47,8 +47,7 @@ header {
   width: 400px;
 }
 
-.user-description,
-.dev-description {
+.user-description {
   opacity: var(--img-bg-opacity);
 }
 
