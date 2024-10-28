@@ -185,7 +185,13 @@ footer {
 }
 
 @media only screen and (max-width: 750px) {
+  :root {
+    --h1-size: 3rem;
+    --font-size: 0.8rem;
+  }
+
   header {
+    margin: 1em;
     font-size: var(--font-size);
     display: grid;
     grid-template-columns: 1fr;
@@ -215,7 +221,26 @@ footer {
     display: none;
   }
 
-  :root {
-    --h1-size: 3rem;
+  .project1-content,
+  .project2-content,
+  .project3-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin: 1em 0em 1em 0em;
+    /* margin: ; */
+  }
+
+  .project1-img {
+    height: 125px;
+    margin: 0em;
+    margin-top: 1em;
+  }
+
+  .project-description {
+    width: 300px;
+    height: 225px;
+    padding: 1em;
   }
 }
